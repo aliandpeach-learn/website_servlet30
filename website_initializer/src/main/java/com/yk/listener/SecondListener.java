@@ -7,7 +7,8 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.ServletRegistration;
 import javax.servlet.annotation.WebListener;
 
-@WebListener//该注释可以直接使得SecondListener成为一个listener
+@WebListener//该注释可以直接使得SecondListener成为一个listener 就不需要再web.xml中配置了
+// 同样的 @WebServlet 和 @WebFilter修饰后，也不在去web.xml中配置
 public class SecondListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {

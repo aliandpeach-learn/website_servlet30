@@ -69,9 +69,7 @@
                     <warName>${project.artifactId}</warName>
                     <webResources>
                         <resource>
-                            <directory>src/main/webapp/WEB-INF</directory>
-                            <targetPath>WEB-INF</targetPath>
-                            <filtering>true</filtering>
+                            <directory>src/main/webapp/</directory>
                         </resource>
                     </webResources>
                 </configuration>
