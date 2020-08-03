@@ -15,6 +15,7 @@ public class SecondListener implements ServletContextListener {
         //和ServletInitializer一样也是可以的，因为@WebListener已经被定义为了listener，所以就可以在启动时定义servlet了
         ServletRegistration.Dynamic servlet = sce.getServletContext().addServlet("secondServlet", new SecondServlet());
         servlet.addMapping("/second");
+//        sce.getServletContext().getInitParameter("xxx"); //如何获取呢
     }
 
     @Override

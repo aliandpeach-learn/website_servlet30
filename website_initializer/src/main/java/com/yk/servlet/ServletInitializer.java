@@ -2,7 +2,6 @@ package com.yk.servlet;
 
 import com.yk.application.WebsiteInitializer;
 import com.yk.filter.UserFilter;
-import com.yk.listener.SecondListener;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration;
@@ -21,7 +20,5 @@ public class ServletInitializer implements WebsiteInitializer {
 
         FilterRegistration.Dynamic filter = servletContext.addFilter("userFilter", new UserFilter());
         filter.addMappingForUrlPatterns(EnumSet.of(DispatcherType.REQUEST, DispatcherType.ASYNC), false, "/*");
-
-//        servletContext.addListener(new SecondListener());
     }
 }
