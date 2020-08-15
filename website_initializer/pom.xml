@@ -67,9 +67,13 @@
                         <addMavenDescriptor>false</addMavenDescriptor>
                     </archive>
                     <warName>${project.artifactId}</warName>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webResources>
                         <resource>
                             <directory>src/main/webapp/</directory>
+                            <includes>
+                                <include>META-INF/</include>
+                            </includes>
                         </resource>
                     </webResources>
                 </configuration>
